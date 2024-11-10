@@ -1,67 +1,67 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function cn(...cns) {
-  return cns.join(' ');
+  return cns.join(' ')
 }
 
 const datas = [
   {
     id: 1,
-    image: 'https://source.unsplash.com/640x480?watch',
+    image: '/images/newproduct.jpg',
     product: 'Apple Watch',
     price: '$300,00',
     alt: 'image1',
   },
   {
     id: 2,
-    image: 'https://source.unsplash.com/640x480?sneaker',
+    image: '/images/newproduct2.jpg',
     product: 'Air Sneaker',
     price: '$90,00',
     alt: 'image2',
   },
   {
     id: 3,
-    image: 'https://source.unsplash.com/640x480?sofa',
+    image: '/images/newproduct3.jpg',
     product: 'Modern Sofa',
     price: '$270,00',
     alt: 'image3',
   },
   {
     id: 4,
-    image: 'https://source.unsplash.com/640x480?television',
+    image: '/images/newproduct4.jpg',
     product: 'Television',
     price: '$120,00',
     alt: 'image4',
   },
   {
     id: 5,
-    image: 'https://source.unsplash.com/640x480?book',
+    image: '/images/newproduct5.jpg',
     product: 'Adult Book',
     price: '$10,00',
     alt: 'image5',
   },
   {
     id: 6,
-    image: 'https://source.unsplash.com/640x480?jeans',
+    image: '/images/newproduct6.jpg',
     product: 'Denim Jeans',
     price: '$20,00',
     alt: 'image6',
   },
   {
     id: 7,
-    image: 'https://source.unsplash.com/640x480?jacket',
+    image: '/images/newproduct7.jpg',
     product: 'Vest Jacket',
     price: '$35,00',
     alt: 'image7',
   },
   {
     id: 8,
-    image: 'https://source.unsplash.com/640x480?guitar',
+    image: '/images/newproduct8.jpg',
     product: 'Accoustic Guitar',
     price: '$150,00',
     alt: 'image8',
   },
-];
+]
 
 export default function CardProduct() {
   return (
@@ -113,5 +113,5 @@ export default function CardProduct() {
         ))}
       </div>
     </div>
-  );
+  )
 }
