@@ -1,22 +1,22 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const imgs = [
-  { id: 0, value: 'https://source.unsplash.com/640x480?nature' },
-  { id: 1, value: 'https://source.unsplash.com/640x480?livingroom' },
-  { id: 2, value: 'https://source.unsplash.com/640x480?sport' },
-  { id: 3, value: 'https://source.unsplash.com/640x480?art' },
-];
+  { id: 0, value: '/images/detail1/side1.jpg' },
+  { id: 1, value: '/images/detail1/side2.jpg' },
+  { id: 2, value: '/images/detail1/side3.jpg' },
+  { id: 3, value: '/images/detail1/side4.jpg' },
+]
 
 const Gallery = () => {
-  const [wordData, setWordData] = useState(imgs[0]);
-  const [val, setVal] = useState(0);
+  const [wordData, setWordData] = useState(imgs[0])
+  const [val, setVal] = useState(0)
 
   const handleClick = (index) => {
-    console.log(index);
-    setVal(index);
-    const wordSlider = imgs[index];
-    setWordData(wordSlider);
-  };
+    console.log(index)
+    setVal(index)
+    const wordSlider = imgs[index]
+    setWordData(wordSlider)
+  }
 
   return (
     <>
@@ -49,7 +49,7 @@ const Gallery = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Gallery;
+export default Gallery
